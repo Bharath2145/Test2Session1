@@ -7,15 +7,16 @@ void input(float *x1, float *y1, float *x2, float *y2)
 }
 void find_distance(float x1, float y1, float x2, float y2, float *s)
 {
-  *s =  (sqrt(x2-x1)*(x2-x1)+(y2-y2)*(y2-y1);
+  *s =  (sqrt(x2-x1)*(x2-x1)+(y2-y2)*(y2-y1));
 }
 void output(float x1, float y1,float x2, float y2, float s)
 {
- printf("the distance between between them is (%f%f)and 
- (%f%f) is %f\n",x1, y1, x2, y2, s);
+ printf("the distance between between them is (%f%f)and (%f%f) is %f\n",x1, y1, x2, y2, s);
 }
 void main()
 {
   int x1, y1, x2, y2, s;
-  input ()
+  input (&x1, &y1, &x2, y2);
+  find_distance(x1, y1, x2, y2, &s);
+  output(x1, y1, x2, y2, s);
 }
